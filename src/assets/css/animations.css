@@ -1,0 +1,6 @@
+.load-enter-active, .load-leave-active {
+  transition: opacity 500ms
+}
+.load-enter, .load-leave-to {
+  opacity: 0
+}

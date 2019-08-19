@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300i,400,500i,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+
+@import "main.css";
+@import "media-queries.css";
+@import "variables.css";
+@import "animations.css";

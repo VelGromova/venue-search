@@ -1,0 +1,16 @@
+:root {
+  --color-gray-dark: #333333;
+
+  --color-white: #fff;
+  --color-lightgrey: #fafafa;
+  --color-darkgrey: #3d3e40;
+
+  --color-green: #30876b;
+
+  --main-color--lighter: rgba(251,153,142,0.8);
+  --main-color--moderate: #fa8c80;
+  --main-color--darker: #fa8072;
+
+  --base-font-family: 'Poppins', sans-serif;
+  --base-font-size: 1rem;
+}
