@@ -62,6 +62,7 @@ export default {
 
   data() {
     return {
+      id: '',
       radius: 1,
       isOpen: false,
       limit: 10,
@@ -104,6 +105,7 @@ export default {
     ...mapActions(['currentGeo']),
     async getVenues() {
       const data = {
+        id: this.id,
         longitude: this.getGeo.longitude,
         latitude: this.getGeo.latitude,
         radius: this.radius * 1000,

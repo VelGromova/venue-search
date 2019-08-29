@@ -1,8 +1,14 @@
 <template>
   <ul class="location-list">
-    <li class="location-list__venue"
-        v-for="(venueData, index) in venues"
-        :key="venueData.venue.id"
+    <router-link
+      :to="{
+         name: 'venueDetail',
+         params: { id: venueData.venue.id }
+      }"
+      tag="li"
+      class="location-list__venue"
+      v-for="(venueData, index) in venues"
+      :key="venueData.venue.id"
     >
       <div class="location-list__img">
         <img :src="photos[index]"
@@ -14,7 +20,7 @@
         <span class="venue-info__price"> {{ venueData.venue.price }}</span>
         <span v-if="venueData.venue.isOpen" class="venue-info__openStatus">Open now</span>
       </div>
-    </li>
+    </router-link>
   </ul>
 </template>
 
